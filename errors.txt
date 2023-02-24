@@ -1,0 +1,812 @@
+info Starting JS server...
+info Installing the app...
+debug Running command "cd android && ./gradlew app:installDebug -PreactNativeDevServerPort=8081"
+> Task :react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :react-native-gradle-plugin:classes UP-TO-DATE
+> Task :react-native-gradle-plugin:inspectClassesForKotlinIC UP-TO-DATE
+> Task :react-native-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :expo-application
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-barcode-scanner
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-camera
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-constants
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-face-detector
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-file-system
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-font
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-image-loader
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-keep-awake
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo-modules-core
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+
+> Configure project :expo
+
+Using expo modules
+  - [32mexpo-application[0m (5.0.1)
+  - [32mexpo-barcode-scanner[0m (12.1.0)
+  - [32mexpo-camera[0m (13.1.0)
+  - [32mexpo-constants[0m (14.0.2)
+  - [32mexpo-face-detector[0m (12.0.0)
+  - [32mexpo-file-system[0m (15.1.1)
+  - [32mexpo-font[0m (11.0.1)
+  - [32mexpo-image-loader[0m (4.0.0)
+  - [32mexpo-keep-awake[0m (11.0.1)
+  - [32mexpo-modules-core[0m (1.1.1)
+
+WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+WARNING:We recommend using a newer Android Gradle plugin to use compileSdk = 33
+
+This Android Gradle plugin (7.2.1) was tested up to compileSdk = 32
+
+This warning can be suppressed by adding
+    android.suppressUnsupportedCompileSdk=33
+to this project's gradle.properties
+
+The build will continue, but you are strongly encouraged to update your project to
+use a newer Android Gradle Plugin that has been tested with compileSdk = 33
+WARNING:We recommend using a newer Android Gradle plugin to use compileSdk = 33
+
+This Android Gradle plugin (7.2.1) was tested up to compileSdk = 32
+
+This warning can be suppressed by adding
+    android.suppressUnsupportedCompileSdk=33
+to this project's gradle.properties
+
+The build will continue, but you are strongly encouraged to update your project to
+use a newer Android Gradle Plugin that has been tested with compileSdk = 33
+
+> Task :amazon-cognito-identity-js:preBuild UP-TO-DATE
+> Task :amazon-cognito-identity-js:preDebugBuild UP-TO-DATE
+> Task :amazon-cognito-identity-js:compileDebugAidl NO-SOURCE
+> Task :amazon-cognito-identity-js:compileDebugRenderscript NO-SOURCE
+> Task :amazon-cognito-identity-js:generateDebugBuildConfig UP-TO-DATE
+> Task :amazon-cognito-identity-js:generateDebugResValues UP-TO-DATE
+> Task :amazon-cognito-identity-js:generateDebugResources UP-TO-DATE
+> Task :amazon-cognito-identity-js:packageDebugResources UP-TO-DATE
+> Task :amazon-cognito-identity-js:parseDebugLocalResources UP-TO-DATE
+> Task :amazon-cognito-identity-js:processDebugManifest UP-TO-DATE
+> Task :amazon-cognito-identity-js:generateDebugRFile UP-TO-DATE
+> Task :amazon-cognito-identity-js:javaPreCompileDebug UP-TO-DATE
+> Task :amazon-cognito-identity-js:compileDebugJavaWithJavac UP-TO-DATE
+> Task :amazon-cognito-identity-js:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:generatePackageList
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :expo:generateExpoModulesPackageList
+> Task :expo:preBuild
+> Task :expo:preDebugBuild
+> Task :expo-application:preBuild UP-TO-DATE
+> Task :expo-application:preDebugBuild UP-TO-DATE
+> Task :expo-modules-core:preBuild UP-TO-DATE
+> Task :expo-modules-core:preDebugBuild UP-TO-DATE
+> Task :expo-modules-core:compileDebugAidl NO-SOURCE
+> Task :expo-application:compileDebugAidl NO-SOURCE
+> Task :expo-barcode-scanner:preBuild UP-TO-DATE
+> Task :expo-barcode-scanner:preDebugBuild UP-TO-DATE
+> Task :expo-barcode-scanner:compileDebugAidl NO-SOURCE
+> Task :expo-camera:preBuild UP-TO-DATE
+> Task :expo-camera:preDebugBuild UP-TO-DATE
+> Task :expo-camera:compileDebugAidl NO-SOURCE
+> Task :expo-constants:preBuild UP-TO-DATE
+> Task :expo-constants:preDebugBuild UP-TO-DATE
+> Task :expo-constants:compileDebugAidl NO-SOURCE
+> Task :expo-face-detector:preBuild UP-TO-DATE
+> Task :expo-face-detector:preDebugBuild UP-TO-DATE
+> Task :expo-face-detector:compileDebugAidl NO-SOURCE
+> Task :expo-file-system:preBuild UP-TO-DATE
+> Task :expo-file-system:preDebugBuild UP-TO-DATE
+> Task :expo-file-system:compileDebugAidl NO-SOURCE
+> Task :expo-font:preBuild UP-TO-DATE
+> Task :expo-font:preDebugBuild UP-TO-DATE
+> Task :expo-font:compileDebugAidl NO-SOURCE
+> Task :expo-image-loader:preBuild UP-TO-DATE
+> Task :expo-image-loader:preDebugBuild UP-TO-DATE
+> Task :expo-image-loader:compileDebugAidl NO-SOURCE
+> Task :expo-keep-awake:preBuild UP-TO-DATE
+> Task :expo-keep-awake:preDebugBuild UP-TO-DATE
+> Task :expo-keep-awake:compileDebugAidl NO-SOURCE
+> Task :expo:compileDebugAidl NO-SOURCE
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preDebugBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugAidl NO-SOURCE
+> Task :react-native-community_netinfo:preBuild UP-TO-DATE
+> Task :react-native-community_netinfo:preDebugBuild UP-TO-DATE
+> Task :react-native-community_netinfo:compileDebugAidl NO-SOURCE
+> Task :react-native-image-picker:preBuild UP-TO-DATE
+> Task :react-native-image-picker:preDebugBuild UP-TO-DATE
+> Task :react-native-image-picker:compileDebugAidl NO-SOURCE
+> Task :react-native-inappbrowser-reborn:preBuild UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:preDebugBuild UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:compileDebugAidl NO-SOURCE
+> Task :react-native-pager-view:preBuild UP-TO-DATE
+> Task :react-native-pager-view:preDebugBuild UP-TO-DATE
+> Task :react-native-pager-view:compileDebugAidl NO-SOURCE
+> Task :react-native-picker_picker:preBuild UP-TO-DATE
+> Task :react-native-picker_picker:preDebugBuild UP-TO-DATE
+> Task :react-native-picker_picker:compileDebugAidl NO-SOURCE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:preDebugBuild UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugAidl NO-SOURCE
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-screens:preDebugBuild UP-TO-DATE
+> Task :react-native-screens:compileDebugAidl NO-SOURCE
+> Task :react-native-vector-icons:preBuild UP-TO-DATE
+> Task :react-native-vector-icons:preDebugBuild UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugAidl NO-SOURCE
+> Task :react-native-video:preBuild UP-TO-DATE
+> Task :react-native-video:preDebugBuild UP-TO-DATE
+> Task :react-native-video:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugAidl NO-SOURCE
+> Task :amazon-cognito-identity-js:packageDebugRenderscript NO-SOURCE
+> Task :expo:packageDebugRenderscript NO-SOURCE
+> Task :expo-application:packageDebugRenderscript NO-SOURCE
+> Task :expo-barcode-scanner:packageDebugRenderscript NO-SOURCE
+> Task :expo-camera:packageDebugRenderscript NO-SOURCE
+> Task :expo-constants:packageDebugRenderscript NO-SOURCE
+> Task :expo-face-detector:packageDebugRenderscript NO-SOURCE
+> Task :expo-file-system:packageDebugRenderscript NO-SOURCE
+> Task :expo-font:packageDebugRenderscript NO-SOURCE
+> Task :expo-image-loader:packageDebugRenderscript NO-SOURCE
+> Task :expo-keep-awake:packageDebugRenderscript NO-SOURCE
+> Task :expo-modules-core:packageDebugRenderscript NO-SOURCE
+> Task :react-native-async-storage_async-storage:packageDebugRenderscript NO-SOURCE
+> Task :react-native-community_netinfo:packageDebugRenderscript NO-SOURCE
+> Task :react-native-image-picker:packageDebugRenderscript NO-SOURCE
+> Task :react-native-inappbrowser-reborn:packageDebugRenderscript NO-SOURCE
+> Task :react-native-pager-view:packageDebugRenderscript NO-SOURCE
+> Task :react-native-picker_picker:packageDebugRenderscript NO-SOURCE
+> Task :react-native-safe-area-context:packageDebugRenderscript NO-SOURCE
+> Task :react-native-screens:packageDebugRenderscript NO-SOURCE
+> Task :react-native-vector-icons:packageDebugRenderscript NO-SOURCE
+> Task :react-native-video:packageDebugRenderscript NO-SOURCE
+> Task :app:compileDebugRenderscript NO-SOURCE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :amazon-cognito-identity-js:compileDebugLibraryResources UP-TO-DATE
+> Task :amazon-cognito-identity-js:writeDebugAarMetadata UP-TO-DATE
+> Task :expo:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-application:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-barcode-scanner:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-camera:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-constants:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-face-detector:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-file-system:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-font:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-image-loader:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-keep-awake:writeDebugAarMetadata UP-TO-DATE
+> Task :expo-modules-core:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-async-storage_async-storage:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-community_netinfo:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-image-picker:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-pager-view:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-picker_picker:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-safe-area-context:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-screens:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-vector-icons:writeDebugAarMetadata UP-TO-DATE
+> Task :react-native-video:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:bundleDebugJsAndAssets SKIPPED
+> Task :amazon-cognito-identity-js:mergeDebugShaders UP-TO-DATE
+> Task :amazon-cognito-identity-js:compileDebugShaders NO-SOURCE
+> Task :amazon-cognito-identity-js:generateDebugAssets UP-TO-DATE
+> Task :amazon-cognito-identity-js:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:copyReactNativeVectorIconFonts UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :expo:mergeDebugShaders UP-TO-DATE
+> Task :expo:compileDebugShaders NO-SOURCE
+> Task :expo:generateDebugAssets UP-TO-DATE
+> Task :expo:packageDebugAssets UP-TO-DATE
+> Task :expo-application:mergeDebugShaders UP-TO-DATE
+> Task :expo-application:compileDebugShaders NO-SOURCE
+> Task :expo-application:generateDebugAssets UP-TO-DATE
+> Task :expo-application:packageDebugAssets UP-TO-DATE
+> Task :expo-barcode-scanner:mergeDebugShaders UP-TO-DATE
+> Task :expo-barcode-scanner:compileDebugShaders NO-SOURCE
+> Task :expo-barcode-scanner:generateDebugAssets UP-TO-DATE
+> Task :expo-barcode-scanner:packageDebugAssets UP-TO-DATE
+> Task :expo-camera:mergeDebugShaders UP-TO-DATE
+> Task :expo-camera:compileDebugShaders NO-SOURCE
+> Task :expo-camera:generateDebugAssets UP-TO-DATE
+> Task :expo-camera:packageDebugAssets UP-TO-DATE
+> Task :expo-constants:mergeDebugShaders UP-TO-DATE
+> Task :expo-constants:compileDebugShaders NO-SOURCE
+
+> Task :expo-constants:createDebugExpoConfig
+Execution optimizations have been disabled for task ':expo-constants:createDebugExpoConfig' to ensure correctness due to the following reasons:
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:checkDebugAarMetadata' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:compileDebugAidl' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:compileDebugRenderscript' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:compileDebugShaders' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:copyReactNativeVectorIconFonts' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:generateDebugBuildConfig' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:generateDebugResValues' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:javaPreCompileDebug' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android'. Reason: Task ':expo-constants:createDebugExpoConfig' uses this output of task ':app:mergeDebugShaders' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.5.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+
+> Task :expo-constants:copyDebugExpoConfig
+> Task :expo-constants:generateDebugAssets UP-TO-DATE
+> Task :expo-constants:packageDebugAssets UP-TO-DATE
+> Task :expo-face-detector:mergeDebugShaders UP-TO-DATE
+> Task :expo-face-detector:compileDebugShaders NO-SOURCE
+> Task :expo-face-detector:generateDebugAssets UP-TO-DATE
+> Task :expo-face-detector:packageDebugAssets UP-TO-DATE
+> Task :expo-file-system:mergeDebugShaders UP-TO-DATE
+> Task :expo-file-system:compileDebugShaders NO-SOURCE
+> Task :expo-file-system:generateDebugAssets UP-TO-DATE
+> Task :expo-file-system:packageDebugAssets UP-TO-DATE
+> Task :expo-font:mergeDebugShaders UP-TO-DATE
+> Task :expo-font:compileDebugShaders NO-SOURCE
+> Task :expo-font:generateDebugAssets UP-TO-DATE
+> Task :expo-font:packageDebugAssets UP-TO-DATE
+> Task :expo-image-loader:mergeDebugShaders UP-TO-DATE
+> Task :expo-image-loader:compileDebugShaders NO-SOURCE
+> Task :expo-image-loader:generateDebugAssets UP-TO-DATE
+> Task :expo-image-loader:packageDebugAssets UP-TO-DATE
+> Task :expo-keep-awake:mergeDebugShaders UP-TO-DATE
+> Task :expo-keep-awake:compileDebugShaders NO-SOURCE
+> Task :expo-keep-awake:generateDebugAssets UP-TO-DATE
+> Task :expo-keep-awake:packageDebugAssets UP-TO-DATE
+> Task :expo-modules-core:mergeDebugShaders UP-TO-DATE
+> Task :expo-modules-core:compileDebugShaders NO-SOURCE
+> Task :expo-modules-core:generateDebugAssets UP-TO-DATE
+> Task :expo-modules-core:packageDebugAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:mergeDebugShaders UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugShaders NO-SOURCE
+> Task :react-native-async-storage_async-storage:generateDebugAssets UP-TO-DATE
+> Task :react-native-async-storage_async-storage:packageDebugAssets UP-TO-DATE
+> Task :react-native-community_netinfo:mergeDebugShaders UP-TO-DATE
+> Task :react-native-community_netinfo:compileDebugShaders NO-SOURCE
+> Task :react-native-community_netinfo:generateDebugAssets UP-TO-DATE
+> Task :react-native-community_netinfo:packageDebugAssets UP-TO-DATE
+> Task :react-native-image-picker:mergeDebugShaders UP-TO-DATE
+> Task :react-native-image-picker:compileDebugShaders NO-SOURCE
+> Task :react-native-image-picker:generateDebugAssets UP-TO-DATE
+> Task :react-native-image-picker:packageDebugAssets UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:mergeDebugShaders UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:compileDebugShaders NO-SOURCE
+> Task :react-native-inappbrowser-reborn:generateDebugAssets UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:packageDebugAssets UP-TO-DATE
+> Task :react-native-pager-view:mergeDebugShaders UP-TO-DATE
+> Task :react-native-pager-view:compileDebugShaders NO-SOURCE
+> Task :react-native-pager-view:generateDebugAssets UP-TO-DATE
+> Task :react-native-pager-view:packageDebugAssets UP-TO-DATE
+> Task :react-native-picker_picker:mergeDebugShaders UP-TO-DATE
+> Task :react-native-picker_picker:compileDebugShaders NO-SOURCE
+> Task :react-native-picker_picker:generateDebugAssets UP-TO-DATE
+> Task :react-native-picker_picker:packageDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:mergeDebugShaders UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugShaders NO-SOURCE
+> Task :react-native-safe-area-context:generateDebugAssets UP-TO-DATE
+> Task :react-native-safe-area-context:packageDebugAssets UP-TO-DATE
+> Task :react-native-screens:mergeDebugShaders UP-TO-DATE
+> Task :react-native-screens:compileDebugShaders NO-SOURCE
+> Task :react-native-screens:generateDebugAssets UP-TO-DATE
+> Task :react-native-screens:packageDebugAssets UP-TO-DATE
+> Task :react-native-vector-icons:mergeDebugShaders UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugShaders NO-SOURCE
+> Task :react-native-vector-icons:generateDebugAssets UP-TO-DATE
+> Task :react-native-vector-icons:packageDebugAssets UP-TO-DATE
+> Task :react-native-video:mergeDebugShaders UP-TO-DATE
+> Task :react-native-video:compileDebugShaders NO-SOURCE
+> Task :react-native-video:generateDebugAssets UP-TO-DATE
+> Task :react-native-video:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:copyDebugBundledJs SKIPPED
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :expo:compileDebugRenderscript NO-SOURCE
+> Task :expo:generateDebugResValues UP-TO-DATE
+> Task :expo:generateDebugResources UP-TO-DATE
+> Task :expo:packageDebugResources UP-TO-DATE
+> Task :expo-application:compileDebugRenderscript NO-SOURCE
+> Task :expo-application:generateDebugResValues UP-TO-DATE
+> Task :expo-application:generateDebugResources UP-TO-DATE
+> Task :expo-application:packageDebugResources UP-TO-DATE
+> Task :expo-barcode-scanner:compileDebugRenderscript NO-SOURCE
+> Task :expo-barcode-scanner:generateDebugResValues UP-TO-DATE
+> Task :expo-barcode-scanner:generateDebugResources UP-TO-DATE
+> Task :expo-barcode-scanner:packageDebugResources UP-TO-DATE
+> Task :expo-camera:compileDebugRenderscript NO-SOURCE
+> Task :expo-camera:generateDebugResValues UP-TO-DATE
+> Task :expo-camera:generateDebugResources UP-TO-DATE
+> Task :expo-camera:packageDebugResources UP-TO-DATE
+> Task :expo-constants:compileDebugRenderscript NO-SOURCE
+> Task :expo-constants:generateDebugResValues UP-TO-DATE
+> Task :expo-constants:generateDebugResources UP-TO-DATE
+> Task :expo-constants:packageDebugResources UP-TO-DATE
+> Task :expo-face-detector:compileDebugRenderscript NO-SOURCE
+> Task :expo-face-detector:generateDebugResValues UP-TO-DATE
+> Task :expo-face-detector:generateDebugResources UP-TO-DATE
+> Task :expo-face-detector:packageDebugResources UP-TO-DATE
+> Task :expo-file-system:compileDebugRenderscript NO-SOURCE
+> Task :expo-file-system:generateDebugResValues UP-TO-DATE
+> Task :expo-file-system:generateDebugResources UP-TO-DATE
+> Task :expo-file-system:packageDebugResources UP-TO-DATE
+> Task :expo-font:compileDebugRenderscript NO-SOURCE
+> Task :expo-font:generateDebugResValues UP-TO-DATE
+> Task :expo-font:generateDebugResources UP-TO-DATE
+> Task :expo-font:packageDebugResources UP-TO-DATE
+> Task :expo-image-loader:compileDebugRenderscript NO-SOURCE
+> Task :expo-image-loader:generateDebugResValues UP-TO-DATE
+> Task :expo-image-loader:generateDebugResources UP-TO-DATE
+> Task :expo-image-loader:packageDebugResources UP-TO-DATE
+> Task :expo-keep-awake:compileDebugRenderscript NO-SOURCE
+> Task :expo-keep-awake:generateDebugResValues UP-TO-DATE
+> Task :expo-keep-awake:generateDebugResources UP-TO-DATE
+> Task :expo-keep-awake:packageDebugResources UP-TO-DATE
+> Task :expo-modules-core:compileDebugRenderscript NO-SOURCE
+> Task :expo-modules-core:generateDebugResValues UP-TO-DATE
+> Task :expo-modules-core:generateDebugResources UP-TO-DATE
+> Task :expo-modules-core:packageDebugResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugRenderscript NO-SOURCE
+> Task :react-native-async-storage_async-storage:generateDebugResValues UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:packageDebugResources UP-TO-DATE
+> Task :react-native-community_netinfo:compileDebugRenderscript NO-SOURCE
+> Task :react-native-community_netinfo:generateDebugResValues UP-TO-DATE
+> Task :react-native-community_netinfo:generateDebugResources UP-TO-DATE
+> Task :react-native-community_netinfo:packageDebugResources UP-TO-DATE
+> Task :react-native-image-picker:compileDebugRenderscript NO-SOURCE
+> Task :react-native-image-picker:generateDebugResValues UP-TO-DATE
+> Task :react-native-image-picker:generateDebugResources UP-TO-DATE
+> Task :react-native-image-picker:packageDebugResources UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:compileDebugRenderscript NO-SOURCE
+> Task :react-native-inappbrowser-reborn:generateDebugResValues UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:generateDebugResources UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:packageDebugResources UP-TO-DATE
+> Task :react-native-pager-view:compileDebugRenderscript NO-SOURCE
+> Task :react-native-pager-view:generateDebugResValues UP-TO-DATE
+> Task :react-native-pager-view:generateDebugResources UP-TO-DATE
+> Task :react-native-pager-view:packageDebugResources UP-TO-DATE
+> Task :react-native-picker_picker:compileDebugRenderscript NO-SOURCE
+> Task :react-native-picker_picker:generateDebugResValues UP-TO-DATE
+> Task :react-native-picker_picker:generateDebugResources UP-TO-DATE
+> Task :react-native-picker_picker:packageDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugRenderscript NO-SOURCE
+> Task :react-native-safe-area-context:generateDebugResValues UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugResources UP-TO-DATE
+> Task :react-native-safe-area-context:packageDebugResources UP-TO-DATE
+> Task :react-native-screens:compileDebugRenderscript NO-SOURCE
+> Task :react-native-screens:generateDebugResValues UP-TO-DATE
+> Task :react-native-screens:generateDebugResources UP-TO-DATE
+> Task :react-native-screens:packageDebugResources UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugRenderscript NO-SOURCE
+> Task :react-native-vector-icons:generateDebugResValues UP-TO-DATE
+> Task :react-native-vector-icons:generateDebugResources UP-TO-DATE
+> Task :react-native-vector-icons:packageDebugResources UP-TO-DATE
+> Task :react-native-video:compileDebugRenderscript NO-SOURCE
+> Task :react-native-video:generateDebugResValues UP-TO-DATE
+> Task :react-native-video:generateDebugResources UP-TO-DATE
+> Task :react-native-video:packageDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :amazon-cognito-identity-js:extractDeepLinksDebug UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :expo:extractDeepLinksDebug UP-TO-DATE
+> Task :expo:processDebugManifest UP-TO-DATE
+> Task :expo-application:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-application:processDebugManifest UP-TO-DATE
+> Task :expo-barcode-scanner:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-barcode-scanner:processDebugManifest UP-TO-DATE
+> Task :expo-camera:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-camera:processDebugManifest UP-TO-DATE
+> Task :expo-constants:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-constants:processDebugManifest UP-TO-DATE
+> Task :expo-face-detector:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-face-detector:processDebugManifest UP-TO-DATE
+> Task :expo-file-system:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-file-system:processDebugManifest UP-TO-DATE
+> Task :expo-font:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-font:processDebugManifest UP-TO-DATE
+> Task :expo-image-loader:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-image-loader:processDebugManifest UP-TO-DATE
+> Task :expo-keep-awake:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-keep-awake:processDebugManifest UP-TO-DATE
+> Task :expo-modules-core:extractDeepLinksDebug UP-TO-DATE
+> Task :expo-modules-core:processDebugManifest UP-TO-DATE
+> Task :react-native-async-storage_async-storage:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:processDebugManifest UP-TO-DATE
+> Task :react-native-community_netinfo:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-community_netinfo:processDebugManifest UP-TO-DATE
+> Task :react-native-image-picker:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-image-picker:processDebugManifest UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:processDebugManifest UP-TO-DATE
+> Task :react-native-pager-view:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-pager-view:processDebugManifest UP-TO-DATE
+> Task :react-native-picker_picker:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-picker_picker:processDebugManifest UP-TO-DATE
+> Task :react-native-safe-area-context:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-safe-area-context:processDebugManifest UP-TO-DATE
+> Task :react-native-screens:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-screens:processDebugManifest UP-TO-DATE
+> Task :react-native-vector-icons:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-vector-icons:processDebugManifest UP-TO-DATE
+> Task :react-native-video:extractDeepLinksDebug UP-TO-DATE
+> Task :react-native-video:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :expo:compileDebugLibraryResources UP-TO-DATE
+> Task :expo:parseDebugLocalResources UP-TO-DATE
+> Task :expo-application:parseDebugLocalResources UP-TO-DATE
+> Task :expo-modules-core:parseDebugLocalResources UP-TO-DATE
+> Task :expo-modules-core:generateDebugRFile UP-TO-DATE
+> Task :expo-application:generateDebugRFile UP-TO-DATE
+> Task :expo-barcode-scanner:parseDebugLocalResources UP-TO-DATE
+> Task :expo-barcode-scanner:generateDebugRFile UP-TO-DATE
+> Task :expo-camera:parseDebugLocalResources UP-TO-DATE
+> Task :expo-camera:generateDebugRFile UP-TO-DATE
+> Task :expo-constants:parseDebugLocalResources UP-TO-DATE
+> Task :expo-constants:generateDebugRFile UP-TO-DATE
+> Task :expo-face-detector:parseDebugLocalResources UP-TO-DATE
+> Task :expo-face-detector:generateDebugRFile UP-TO-DATE
+> Task :expo-file-system:parseDebugLocalResources UP-TO-DATE
+> Task :expo-file-system:generateDebugRFile UP-TO-DATE
+> Task :expo-font:parseDebugLocalResources UP-TO-DATE
+> Task :expo-font:generateDebugRFile UP-TO-DATE
+> Task :expo-image-loader:parseDebugLocalResources UP-TO-DATE
+> Task :expo-image-loader:generateDebugRFile UP-TO-DATE
+> Task :expo-keep-awake:parseDebugLocalResources UP-TO-DATE
+> Task :expo-keep-awake:generateDebugRFile UP-TO-DATE
+> Task :expo:generateDebugRFile UP-TO-DATE
+> Task :expo-application:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-barcode-scanner:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-camera:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-constants:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-face-detector:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-file-system:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-font:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-image-loader:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-keep-awake:compileDebugLibraryResources UP-TO-DATE
+> Task :expo-modules-core:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugRFile UP-TO-DATE
+> Task :react-native-community_netinfo:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-community_netinfo:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-community_netinfo:generateDebugRFile UP-TO-DATE
+> Task :react-native-image-picker:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-image-picker:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-image-picker:generateDebugRFile UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:generateDebugRFile UP-TO-DATE
+> Task :react-native-pager-view:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-pager-view:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-pager-view:generateDebugRFile UP-TO-DATE
+> Task :react-native-picker_picker:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-picker_picker:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-picker_picker:generateDebugRFile UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-safe-area-context:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugRFile UP-TO-DATE
+> Task :react-native-screens:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-screens:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-screens:generateDebugRFile UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-vector-icons:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-vector-icons:generateDebugRFile UP-TO-DATE
+> Task :react-native-video:compileDebugLibraryResources UP-TO-DATE
+> Task :react-native-video:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-video:generateDebugRFile UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :expo:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-application:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-modules-core:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-modules-core:compileDebugKotlin UP-TO-DATE
+> Task :expo-modules-core:javaPreCompileDebug UP-TO-DATE
+> Task :expo-modules-core:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-modules-core:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-application:compileDebugKotlin UP-TO-DATE
+> Task :expo-application:javaPreCompileDebug UP-TO-DATE
+> Task :expo-application:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-application:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-barcode-scanner:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-barcode-scanner:compileDebugKotlin UP-TO-DATE
+> Task :expo-barcode-scanner:javaPreCompileDebug UP-TO-DATE
+> Task :expo-barcode-scanner:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-barcode-scanner:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-camera:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-camera:compileDebugKotlin UP-TO-DATE
+> Task :expo-camera:javaPreCompileDebug UP-TO-DATE
+> Task :expo-camera:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-camera:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-constants:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-constants:compileDebugKotlin UP-TO-DATE
+> Task :expo-constants:javaPreCompileDebug UP-TO-DATE
+> Task :expo-constants:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-constants:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-face-detector:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-face-detector:compileDebugKotlin UP-TO-DATE
+> Task :expo-face-detector:javaPreCompileDebug UP-TO-DATE
+> Task :expo-face-detector:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-face-detector:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-file-system:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-file-system:compileDebugKotlin UP-TO-DATE
+> Task :expo-file-system:javaPreCompileDebug UP-TO-DATE
+> Task :expo-file-system:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-file-system:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-font:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-font:compileDebugKotlin UP-TO-DATE
+> Task :expo-font:javaPreCompileDebug UP-TO-DATE
+> Task :expo-font:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-font:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-image-loader:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-image-loader:compileDebugKotlin UP-TO-DATE
+> Task :expo-image-loader:javaPreCompileDebug UP-TO-DATE
+> Task :expo-image-loader:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-image-loader:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo-keep-awake:generateDebugBuildConfig UP-TO-DATE
+> Task :expo-keep-awake:compileDebugKotlin UP-TO-DATE
+> Task :expo-keep-awake:javaPreCompileDebug UP-TO-DATE
+> Task :expo-keep-awake:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo-keep-awake:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :expo:compileDebugKotlin UP-TO-DATE
+> Task :expo:javaPreCompileDebug UP-TO-DATE
+> Task :expo:compileDebugJavaWithJavac UP-TO-DATE
+> Task :expo:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-async-storage_async-storage:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-community_netinfo:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-community_netinfo:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-community_netinfo:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-community_netinfo:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-image-picker:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-image-picker:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-image-picker:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-image-picker:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-inappbrowser-reborn:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-pager-view:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-pager-view:compileDebugKotlin UP-TO-DATE
+> Task :react-native-pager-view:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-pager-view:compileDebugJavaWithJavac
+> Task :react-native-picker_picker:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-picker_picker:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-picker_picker:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-picker_picker:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-safe-area-context:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-pager-view:bundleLibCompileToJarDebug
+> Task :react-native-safe-area-context:compileDebugKotlin UP-TO-DATE
+> Task :react-native-safe-area-context:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-safe-area-context:compileDebugJavaWithJavac
+> Task :react-native-screens:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-safe-area-context:bundleLibCompileToJarDebug
+> Task :react-native-screens:compileDebugKotlin UP-TO-DATE
+> Task :react-native-screens:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-screens:compileDebugJavaWithJavac
+> Task :react-native-vector-icons:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-vector-icons:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-vector-icons:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-vector-icons:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :react-native-video:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-video:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-video:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-video:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :amazon-cognito-identity-js:processDebugJavaRes NO-SOURCE
+> Task :amazon-cognito-identity-js:bundleLibResDebug NO-SOURCE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :expo:processDebugJavaRes NO-SOURCE
+> Task :expo:bundleLibResDebug UP-TO-DATE
+> Task :expo-application:processDebugJavaRes NO-SOURCE
+> Task :expo-application:bundleLibResDebug UP-TO-DATE
+> Task :expo-barcode-scanner:processDebugJavaRes NO-SOURCE
+> Task :expo-barcode-scanner:bundleLibResDebug UP-TO-DATE
+> Task :expo-camera:processDebugJavaRes NO-SOURCE
+> Task :react-native-screens:bundleLibCompileToJarDebug
+> Task :expo-camera:bundleLibResDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+
+> Task :expo-constants:cleanupDebugExpoConfig
+> Task :expo-constants:processDebugJavaRes NO-SOURCE
+> Task :expo-constants:bundleLibResDebug UP-TO-DATE
+> Task :expo-face-detector:processDebugJavaRes NO-SOURCE
+> Task :expo-face-detector:bundleLibResDebug UP-TO-DATE
+> Task :expo-file-system:processDebugJavaRes NO-SOURCE
+> Task :expo-file-system:bundleLibResDebug UP-TO-DATE
+> Task :expo-font:processDebugJavaRes NO-SOURCE
+> Task :expo-font:bundleLibResDebug UP-TO-DATE
+> Task :expo-image-loader:processDebugJavaRes NO-SOURCE
+> Task :expo-image-loader:bundleLibResDebug UP-TO-DATE
+> Task :expo-keep-awake:processDebugJavaRes NO-SOURCE
+> Task :expo-keep-awake:bundleLibResDebug UP-TO-DATE
+> Task :expo-modules-core:processDebugJavaRes NO-SOURCE
+> Task :expo-modules-core:bundleLibResDebug UP-TO-DATE
+> Task :react-native-async-storage_async-storage:processDebugJavaRes NO-SOURCE
+> Task :react-native-async-storage_async-storage:bundleLibResDebug NO-SOURCE
+> Task :react-native-community_netinfo:processDebugJavaRes NO-SOURCE
+> Task :react-native-community_netinfo:bundleLibResDebug NO-SOURCE
+> Task :react-native-image-picker:processDebugJavaRes NO-SOURCE
+> Task :react-native-image-picker:bundleLibResDebug NO-SOURCE
+> Task :react-native-inappbrowser-reborn:processDebugJavaRes NO-SOURCE
+> Task :react-native-inappbrowser-reborn:bundleLibResDebug NO-SOURCE
+> Task :react-native-pager-view:processDebugJavaRes NO-SOURCE
+> Task :react-native-picker_picker:processDebugJavaRes NO-SOURCE
+> Task :react-native-picker_picker:bundleLibResDebug NO-SOURCE
+> Task :react-native-pager-view:bundleLibResDebug
+> Task :react-native-safe-area-context:processDebugJavaRes NO-SOURCE
+> Task :react-native-screens:processDebugJavaRes NO-SOURCE
+> Task :react-native-safe-area-context:bundleLibResDebug
+> Task :react-native-vector-icons:processDebugJavaRes NO-SOURCE
+> Task :react-native-vector-icons:bundleLibResDebug NO-SOURCE
+> Task :react-native-video:processDebugJavaRes NO-SOURCE
+> Task :react-native-video:bundleLibResDebug NO-SOURCE
+> Task :react-native-screens:bundleLibResDebug
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-community_netinfo:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :react-native-picker_picker:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :amazon-cognito-identity-js:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :expo-application:bundleLibRuntimeToJarDebug
+> Task :expo:bundleLibRuntimeToJarDebug
+> Task :expo-constants:bundleLibRuntimeToJarDebug
+> Task :expo-barcode-scanner:bundleLibRuntimeToJarDebug
+> Task :expo-face-detector:bundleLibRuntimeToJarDebug
+> Task :expo-font:bundleLibRuntimeToJarDebug
+> Task :expo-file-system:bundleLibRuntimeToJarDebug
+> Task :expo-camera:bundleLibRuntimeToJarDebug
+> Task :expo-image-loader:bundleLibRuntimeToJarDebug
+> Task :expo-keep-awake:bundleLibRuntimeToJarDebug
+> Task :react-native-image-picker:bundleLibRuntimeToJarDebug
+> Task :react-native-inappbrowser-reborn:bundleLibRuntimeToJarDebug
+> Task :app:checkDebugDuplicateClasses FAILED
+> Task :react-native-pager-view:bundleLibRuntimeToJarDebug
+> Task :react-native-safe-area-context:bundleLibRuntimeToJarDebug
+> Task :react-native-screens:bundleLibRuntimeToJarDebug
+> Task :expo-modules-core:bundleLibRuntimeToJarDebug
+> Task :app:mergeDebugJavaResource
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+Execution optimizations have been disabled for 1 invalid unit(s) of work during this build to ensure correctness.
+Please consult deprecation warnings for more details.
+386 actionable tasks: 33 executed, 353 up-to-date
+Note: /Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android/app/src/debug/java/com/robinstagramtsaws/ReactNativeFlipper.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:checkDebugDuplicateClasses'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
+   > Duplicate class kotlin.collections.jdk8.CollectionsJDK8Kt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations$ReflectSdkVersion found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations$ReflectSdkVersion found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.io.path.ExperimentalPathApi found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathRelativizer found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathsKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathsKt__PathReadWriteKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathsKt__PathUtilsKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.jdk7.AutoCloseableKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.jvm.jdk8.JvmRepeatableKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.random.jdk8.PlatformThreadLocalRandom found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$1 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$2 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$3 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$4 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.text.jdk8.RegexExtensionsJDK8Kt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.time.jdk8.DurationConversionsJDK8Kt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     
+     Go to the documentation to learn how to <a href="d.android.com/r/tools/classpath-sync-errors">Fix dependency resolution errors</a>.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+java.lang.StackOverflowError (no error message)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 29s
+
+Error: Command failed: ./gradlew app:installDebug -PreactNativeDevServerPort=8081
+Note: /Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/android/app/src/debug/java/com/robinstagramtsaws/ReactNativeFlipper.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:checkDebugDuplicateClasses'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
+   > Duplicate class kotlin.collections.jdk8.CollectionsJDK8Kt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.internal.jdk7.JDK7PlatformImplementations$ReflectSdkVersion found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.internal.jdk8.JDK8PlatformImplementations$ReflectSdkVersion found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.io.path.ExperimentalPathApi found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathRelativizer found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathsKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathsKt__PathReadWriteKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.io.path.PathsKt__PathUtilsKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.jdk7.AutoCloseableKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk7-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21)
+     Duplicate class kotlin.jvm.jdk8.JvmRepeatableKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.random.jdk8.PlatformThreadLocalRandom found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$1 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$2 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$3 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$4 found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.text.jdk8.RegexExtensionsJDK8Kt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     Duplicate class kotlin.time.jdk8.DurationConversionsJDK8Kt found in modules jetified-kotlin-stdlib-1.8.0 (org.jetbrains.kotlin:kotlin-stdlib:1.8.0) and jetified-kotlin-stdlib-jdk8-1.6.21 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21)
+     
+     Go to the documentation to learn how to <a href="d.android.com/r/tools/classpath-sync-errors">Fix dependency resolution errors</a>.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+java.lang.StackOverflowError (no error message)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 29s
+
+    at makeError (/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/node_modules/execa/index.js:174:9)
+    at /Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/node_modules/execa/index.js:278:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async runOnAllDevices (/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/node_modules/@react-native-community/cli-platform-android/build/commands/runAndroid/runOnAllDevices.js:109:5)
+    at async Command.handleAction (/Users/cash/Desktop/notjustdev/robinstagramtsaws-aws-cap6conError-android31/node_modules/@react-native-community/cli/build/index.js:142:9)
