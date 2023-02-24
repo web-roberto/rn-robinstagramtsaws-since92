@@ -62,5 +62,37 @@
         "storage": {}
       }
     }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-robinstagramtsaws-prod-40530-authRole",
+      "UnauthRoleArn": "arn:aws:iam::526191879772:role/amplify-robinstagramtsaws-prod-40530-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::526191879772:role/amplify-robinstagramtsaws-prod-40530-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-robinstagramtsaws-prod-40530-deployment",
+      "UnauthRoleName": "amplify-robinstagramtsaws-prod-40530-unauthRole",
+      "StackName": "amplify-robinstagramtsaws-prod-40530",
+      "StackId": "arn:aws:cloudformation:eu-west-1:526191879772:stack/amplify-robinstagramtsaws-prod-40530/1d0c9440-b3f0-11ed-85bf-029ce2a3cfdd",
+      "AmplifyAppId": "d1jexz340xhw0q",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-robinstagramtsaws-prod-40530-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "robinstagramtsaws": {}
+      },
+      "function": {
+        "robinstagramtsawsPostConfirmation": {
+          "deploymentBucketName": "amplify-robinstagramtsaws-prod-40530-deployment",
+          "s3Key": "amplify-builds/robinstagramtsawsPostConfirmation-517854396b586f67556c-build.zip"
+        },
+        "robinstagramtsaws": {}
+      },
+      "api": {
+        "robinstagramtsaws": {}
+      },
+      "storage": {
+        "storage": {}
+      }
+    }
   }
 }
