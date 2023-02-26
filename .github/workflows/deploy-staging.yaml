@@ -38,7 +38,7 @@ jobs:
     - name: Install AWS Amplify cli
       run: |
         npm install -g @aws-amplify/cli@latest
-        echo "amplify version ${amplify --version}"
+        echo "amplify version $(amplify --version)"
     # Initialize the backend environment
     - name: Initialize backend environment
       run: ./.github/scripts/amplify-init.sh staging ## fichero descargado de notJust dev      
