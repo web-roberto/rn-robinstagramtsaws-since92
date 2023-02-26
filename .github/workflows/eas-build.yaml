@@ -11,7 +11,7 @@ on:
         default: production
 jobs:
   build:
-    - name: Install and build
+      - name: Install and build
       runs-on: ubuntu-latest # SO en el que se ejecuta este job
       - uses: actions/checkout@v3 # graba lo cambios de nuestro repositorio a la maquina virtual del job
       - uses: actions/setup-node@v3 #instala node 16.x con npm, dentro de la maquina virtual
