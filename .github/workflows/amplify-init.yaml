@@ -52,3 +52,5 @@ jobs:
 
       # Commit and push changes to github
       - uses: stefanzweifel/git-auto-commit-action@v4
+        with: # which files will be pushed to github
+          file_pattern: src amplify # the only files that will change
