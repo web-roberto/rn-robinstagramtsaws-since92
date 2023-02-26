@@ -1,0 +1,27 @@
+name: EAS Build
+on:
+  workflow_dispatch:  # the workflow will be executed manually
+  push:
+    branches:
+      - staging # the workflow will be executed when we do a push to the branch staging
+      - dev
+jobs:
+  build:
+    name: Install and build
+    runs-on: ubuntu-latest # SO en el que se ejecuta este job
+    steps:
+      - uses: actions/checkout@v3 # graba lo cambios de nuestro repositorio a la maquina virtual del job
+      - uses: actions/setup-node@v3 #instala node 16.x con npm, dentro de la maquina virtual
+        with:
+          node-version: 16.x
+          cache: npm
+      - name: Setup Expo and EAS
+        uses: expo/expo-github-action@v7 # instala eas en la maquina virtual de este job
+        with:
+          expo-version: 5.x
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }} # token que le damos a la MV y se conecte a nuestra cuenta de Expo
+      - name: Install dependencies
+        run: npm ci
+      - name: Build on EAS
+        run: eas build --platform all --non-interactive

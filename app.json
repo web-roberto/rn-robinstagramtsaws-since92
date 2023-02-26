@@ -1,4 +1,9 @@
 {
   "name": "AlonsoInsta",
-  "displayName": "AlonsoInsta"
+  "displayName": "Beach Social",
+  "extra": {
+    "eas": {
+      "projectId": "c9216318-3780-4f45-979b-b5359f6a08fa"
+    }
+  }
 }
