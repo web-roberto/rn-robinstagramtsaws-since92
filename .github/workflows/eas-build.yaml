@@ -29,7 +29,7 @@ jobs:
        # run: npm ci # npm install
        ## uso yarn en lugar de npm
         run: npm ci --legacy-peer-deps     
-        # |
+        # | 
         #   if [ -e yarn.lock ]; then
         #    yarn install --frozen-lockfile
         #   elif [ -e package-lock.json ]; then
