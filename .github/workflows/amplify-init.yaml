@@ -1,4 +1,4 @@
-name: Initilizae Amplify environment
+name: Initilitze Amplify environment
 on:
   workflow_call:  # the workflow will be executed manually
     inputs:
@@ -44,7 +44,7 @@ jobs:
 
       # Initialize the backend environment
       - name: Initialize backend environment
-        run: ./.github/scripts/amplify-init.sh ${{ AMPLIFY_ENV_NAME }} ## fichero descargado de notJust dev      
+        run: ./.github/scripts/amplify-init.sh ${{ inputs.AMPLIFY_ENV_NAME }} ## fichero descargado de notJust dev      
 
       # Push changes to cloud
       - name: Push backend changes
