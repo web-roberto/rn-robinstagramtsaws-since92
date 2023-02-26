@@ -22,6 +22,7 @@ npx pod-install ios && npx react-native run-ios
 # Google: https://console.cloud.google.com/apis/dashboard?pli=1&project=authfirebase-375922
  ID cliente:135621889159-8380mlvo5mdrkpvg0hr2sg5ub9btvfk4.apps.googleusercontent.com
  secret client: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
+ # Expo token: cgGBK45NC5Yr8ZrGtbTIZjG0B1JRDjxwfiR5pdl3
  # error  coordinacion package.json de GRAPHQL en AWS y local
  La solución depende de la versión de React Native:
 A)

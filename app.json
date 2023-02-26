@@ -1,4 +1,17 @@
 {
   "name": "AlonsoInsta",
-  "displayName": "AlonsoInsta"
+  "displayName": "AlonsoInsta",
+  "ios": {
+    "bundleIdentifier": "dev.beach.social",
+    "buildNumber": "1.0.1" //increase it for iOS
+  },
+  "android": {
+    "package": "dev.beach.social",
+    "versionCode": 1 //increase it for android
+  },
+  "extra": {
+    "eas": {
+      "projectId": "c9216318-3780-4f45-979b-b5359f6a08fa"
+    }
+  }
 }
