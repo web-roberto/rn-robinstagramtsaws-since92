@@ -18,16 +18,19 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3 # graba lo cambios de nuestro repositorio a la maquina virtual del job
+    
       - uses: actions/setup-node@v3 #instala node 16.x con npm, dentro de la maquina virtual
         with:
           node-version: 16.x
           cache: npm
+
     # Install and configure AWS cli
     - name: Install AWS cli
       run: |
         curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
         unzip awscliv2.zip
         sudo ./aws/install --update
+
     - name: Configure AWS cli credentials
       run: |
         aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile default 
@@ -37,8 +40,9 @@ jobs:
     # Install and configure AWS Amplify cli 
     - name: Install AWS Amplify cli
       run: |
-        npm install -g @aws-amplify/cli@latest
+        npm install -g --unsafe-perm @aws-amplify/cli@latest
         echo "amplify version $(amplify --version)"
+
     # Initialize the backend environment
     - name: Initialize backend environment
       run: ./.github/scripts/amplify-init.sh staging ## fichero descargado de notJust dev      
