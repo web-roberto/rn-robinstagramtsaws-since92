@@ -1,13 +1,14 @@
 {
   "name": "AlonsoInsta",
-  "version": "0.0.1",
+  "version": "1.0.5",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "postversion": "npx react-native-version"
   },
   "dependencies": {
     "@apollo/client": "^3.7.7",

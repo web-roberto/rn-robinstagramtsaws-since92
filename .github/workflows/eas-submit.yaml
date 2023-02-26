@@ -1,0 +1,34 @@
+name: EAS Submit
+on:
+  workflow_call:
+    inputs:
+      PLATFORM:
+        required: true
+        type: string
+      PROFILE:
+        required: false
+        type: string
+        default: production
+jobs:
+  submit:
+    name: Submit the app using EAS
+    runs-on: ubuntu-latest # SO en el que se ejecuta este job
+    steps:
+      - uses: actions/checkout@v3 # graba lo cambios de nuestro repositorio a la maquina virtual del job
+      # No necesitamos NODE ni NPM I
+      - name: Setup Expo and EAS
+        uses: expo/expo-github-action@v7 # instala eas en la maquina virtual de este job
+        with:
+          expo-version: 5.x
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }} # token que le damos a la MV y se conecte a nuestra cuenta de Expo
+      - name: Decode and write the service_account.json
+        env: 
+          GOOGLE_SERVICE_ACCOUNT_BASE64: ${{ secrets.GOOGLE_SERVICE_ACCOUNT}}
+          # reconstruye el fichero 'service_account.json' desde la key en string
+        run: echo $GOOGLE_SERVICE_ACCOUNT_BASE64 | base64 --decode > service_account.json
+
+
+
+      - name: Submit to EAS
+        run: eas submit --profile ${{ inputs.PROFILE }} --platform  ${{ inputs.PLATFORM }}  --latest --non-interactive # para el staging

@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
        # run: npm ci # npm install
        ## uso yarn en lugar de npm
-        run: npm ci --legacy-peer-deps     
+        run: npm ci --legacy-peer-deps --force    
         # | 
         #   if [ -e yarn.lock ]; then
         #    yarn install --frozen-lockfile

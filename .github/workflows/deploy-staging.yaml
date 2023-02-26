@@ -1,58 +1,18 @@
-name: EAS Build
+name: Build and Deploy the application to staging environment
 on:
   workflow_dispatch:  # the workflow will be executed manually
   push:
     branches:
       - staging # the workflow will be executed when we do a push to the branch staging
-      - dev
-env:
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  AWS_REGION: ${{ secrets.AWS_REGION }}
-  AMPLIFY_FACEBOOK_CLIENT_ID: ${{ secrets.AMPLIFY_FACEBOOK_CLIENT_ID }}
-  AMPLIFY_FACEBOOK_CLIENT_SECRET: ${{ secrets.AMPLIFY_FACEBOOK_CLIENT_SECRET }}
-  AMPLIFY_GOOGLE_CLIENT_ID: ${{ secrets.AMPLIFY_GOOGLE_CLIENT_ID }}
-  AMPLIFY_GOOGLE_CLIENT_SECRET: ${{ secrets.AMPLIFY_GOOGLE_CLIENT_SECRET }}
+      
 jobs:
   deploy-backend:
-    runs-on: ubuntu-latest
-    steps: 
-      - uses: actions/checkout@v3 # graba lo cambios de nuestro repositorio a la maquina virtual del job
-      - uses: actions/setup-node@v3 #instala node 16.x con npm, dentro de la maquina virtual
-        with:
-          node-version: 16.x
-          cache: npm
-
-      # Install and configure AWS cli
-      - name: Install AWS cli
-        run: |
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install --update
-
-      - name: Configure AWS cli credentials
-        run: |
-          aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile default 
-          aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile default 
-          aws configure set default.region $AWS_REGION
-
-      # Install and configure AWS Amplify cli 
-      - name: Install AWS Amplify cli
-        run: |
-          npm install -g --unsafe-perm @aws-amplify/cli@latest
-          echo "amplify version $(amplify --version)"
-
-      # Initialize the backend environment
-      - name: Initialize backend environment
-        run: ./.github/scripts/amplify-init.sh staging ## fichero descargado de notJust dev      
-
-      # Push changes to cloud
-      - name: Push backend changes
-        run: amplify push --yes
-
-      # Commit and push changes to github
-      - uses: stefanzweifel/git-auto-commit-action@v4
-
+    name: Deploy backend to staging environment
+    uses: ./.github/workflows/amplify-init.yaml
+    secrets: inherit
+    with:
+      AMPLIFY_ENV_NAME: staging
+   
   build-android:
     name: Install and build android app (Preview)
     needs: deploy-backend
