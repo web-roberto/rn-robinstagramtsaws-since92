@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest # SO en el que se ejecuta este job
     steps:
       - uses: actions/checkout@v3 # graba lo cambios de nuestro repositorio a la maquina virtual del job
+      - run: git pull origin ${{ github.ref_name }} # usamos el último commit subido y no el que dispara este workflow
       - uses: actions/setup-node@v3 #instala node 16.x con npm, dentro de la maquina virtual
         with:
           node-version: 16.x
