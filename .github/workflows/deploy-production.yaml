@@ -65,8 +65,7 @@ jobs:
       PLATFORM: android
       # PROFILE: production
 
-
- submit-ios:
+  submit-ios:
     name: Submit ios app to App Store
     needs: build-ios
     uses: ./.github/workflows/eas-submit.yaml
