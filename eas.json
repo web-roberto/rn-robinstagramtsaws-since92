@@ -39,7 +39,8 @@
     "production": {
       "android": {
         "serviceAccountKeyPath": "./service_account.json",
-        "track": "production"
+        "track": "production",
+        "changesNotSentForReview": true
       },
       "ios":{
       "appleId": "roberto.alonso.gandia@gmail.com",
