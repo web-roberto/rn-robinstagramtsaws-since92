@@ -16,6 +16,7 @@ jobs:
   build-android:
     name: Install and build android app (Preview)
     needs: deploy-backend
+
     uses: ./.github/workflows/eas-build.yaml
     secrets: inherit
     with:
