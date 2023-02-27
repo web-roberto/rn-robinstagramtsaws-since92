@@ -122,3 +122,4 @@ gradle-8.0.1-all.zip
 # CLAVES DE usuario AWS: robinstagramtsawsCICD para Maquina Virtual de la App cliente usado en CICD
   Key:AKIAXVA324ZOBFW7VYOA
   SecretKey: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
+  
