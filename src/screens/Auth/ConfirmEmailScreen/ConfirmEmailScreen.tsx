@@ -35,7 +35,11 @@ const ConfirmEmailScreen = () => {
     if (loading) return; //la  2ª llamada, la 3ª...
     setLoading(true)
     try{
+      console.warn('----------onConfirmPressed----email:---',email);
+      console.warn('----------onConfirmPressed----code:---',code);
       const response = await Auth.confirmSignUp(email,code)
+      console.warn('----------onConfirmPressed---tras---confirmSignUp---',JSON.stringify(response, null, 2));
+
       // Save user datain context
       navigation.navigate("SignIn");
       //console.log(response);
