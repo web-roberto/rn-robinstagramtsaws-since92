@@ -19,7 +19,7 @@
       "function": {
         "robinstagramtsawsPostConfirmation": {
           "deploymentBucketName": "amplify-robinstagramtsaws-staging-115831-deployment",
-          "s3Key": "amplify-builds/robinstagramtsawsPostConfirmation-517854396b586f67556c-build.zip"
+          "s3Key": "amplify-builds/robinstagramtsawsPostConfirmation-704871706a557853706f-build.zip"
         },
         "robinstagramtsaws": {}
       },
