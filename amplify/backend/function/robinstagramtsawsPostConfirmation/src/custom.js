@@ -65,7 +65,7 @@ const saveUser=async (user)=>{
 }
 
 exports.handler = async (event, context) => {
-  // insert code to be executed by your lambda trigger
+  // insert code to be executed by your lambda trigger 
   console.log("roberto.....Funciona la funcion lambda")
   console.log(event)
 
