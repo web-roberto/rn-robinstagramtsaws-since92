@@ -90,7 +90,6 @@ export const createLike = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -182,7 +181,6 @@ export const updateLike = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -274,7 +272,6 @@ export const deleteLike = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -367,7 +364,6 @@ export const createComment = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -460,7 +456,6 @@ export const updateComment = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -553,7 +548,6 @@ export const deleteComment = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -614,7 +608,6 @@ export const createPost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -630,7 +623,6 @@ export const createPost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -700,7 +692,6 @@ export const updatePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -716,7 +707,6 @@ export const updatePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -786,7 +776,6 @@ export const deletePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -802,7 +791,6 @@ export const deletePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -864,7 +852,6 @@ export const createUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -879,7 +866,6 @@ export const createUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -942,7 +928,6 @@ export const updateUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -957,7 +942,6 @@ export const updateUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1020,7 +1004,6 @@ export const deleteUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1035,7 +1018,6 @@ export const deleteUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt

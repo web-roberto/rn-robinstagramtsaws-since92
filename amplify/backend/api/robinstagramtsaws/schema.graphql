@@ -3,8 +3,8 @@
 # INDICE para consultar rápido -> username: String @index(name:"usersByUsername",queryField:"usersByUsername")
 # INDICE de Posts ordenados por User: -> postID: ID! @index(name: "byPost",queryField:"LikesForPostByUser", sortKeyFields:["userID"])
 # amplify push -yes -> actualiza en AWS y genera la consulta en `graphql/queries.ts' AL FINAL DEL FICHERO
-# type Like @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
-  type Like @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
+type Like @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
+#  type Like @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
   id: ID!
   userID: ID! @index(name: "byUser")
   postID: ID! @index(name: "byPost",queryField:"likesForPostByUser", sortKeyFields:["userID"])
@@ -12,8 +12,8 @@
   Post: Post @belongsTo(fields: ["postID"])
 }
 
-# type Comment @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
-type Comment @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
+type Comment @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
+# type Comment @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
   id: ID!
   createdAt:AWSDateTime!
   comment: String!
@@ -23,8 +23,8 @@ type Comment @model @auth(rules: [{allow: public, operations: [create, read, upd
   Post: Post @belongsTo(fields: ["postID"])
 }
 
-# type Post @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
- type Post @model @auth(rules: [{allow: public, operations: [create, read, update]},{allow:owner}]) {
+type Post @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
+# type Post @model @auth(rules: [{allow: public, operations: [create, read, update]},{allow:owner}]) {
   id: ID!
   createdAt:AWSDateTime!
   type: String! @index(name: "postsByDate",queryField:"postsByDate", sortKeyFields:["createdAt"])
@@ -41,23 +41,22 @@ type Comment @model @auth(rules: [{allow: public, operations: [create, read, upd
   Comments: [Comment] @hasMany(indexName: "byPost", fields: ["id"])
 }
 
-# type User @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
-type User @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
-  id: ID!  @auth(rules: [{allow:owner},{allow:public}])
-  name: String! @auth(rules: [{allow:owner},{allow:public}])
+type User @model @auth(rules: [{allow: private, operations:[read]},{allow:owner}]) {
+# type User @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
+  id: ID! 
+  name: String! 
   email: String @auth(rules: [{allow:owner}])
   bio: String 
-  username: String
-  website: AWSURL
-  nofPosts: Int! @auth(rules: [{allow:owner},{allow:public}])
-  nofFollowers: Int! @auth(rules: [{allow:owner},{allow:public}])
-  nofFollowings: Int! @auth(rules: [{allow:owner},{allow:public}])
+  username: String 
+  website: AWSURL 
+  nofPosts: Int! 
+  nofFollowers: Int! 
+  nofFollowings: Int! 
   image: String 
   Posts: [Post] @hasMany(indexName: "byUser", fields: ["id"]) 
-  Comments: [Comment] @hasMany(indexName: "byUser", fields: ["id"])
+  Comments: [Comment] @hasMany(indexName: "byUser", fields: ["id"]) 
   Likes: [Like] @hasMany(indexName: "byUser", fields: ["id"])
-}
-
+  
 type Subscription {
   onCreateCommentByPostId(postID:ID!): Comment @aws_subscribe(mutations: ["createComment"])
 }

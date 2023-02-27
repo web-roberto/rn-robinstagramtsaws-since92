@@ -109,21 +109,11 @@ export const schema = {
                     "properties": {
                         "rules": [
                             {
-                                "allow": "private",
-                                "operations": [
-                                    "read"
-                                ]
-                            },
-                            {
-                                "provider": "userPools",
-                                "ownerField": "owner",
-                                "allow": "owner",
-                                "identityClaim": "cognito:username",
+                                "allow": "public",
                                 "operations": [
                                     "create",
-                                    "update",
-                                    "delete",
-                                    "read"
+                                    "read",
+                                    "update"
                                 ]
                             }
                         ]
@@ -277,35 +267,15 @@ export const schema = {
                     "properties": {}
                 },
                 {
-                    "type": "key",
-                    "properties": {
-                        "name": "usersByUsername",
-                        "queryField": "usersByUsername",
-                        "fields": [
-                            "username"
-                        ]
-                    }
-                },
-                {
                     "type": "auth",
                     "properties": {
                         "rules": [
                             {
-                                "allow": "private",
-                                "operations": [
-                                    "read"
-                                ]
-                            },
-                            {
-                                "provider": "userPools",
-                                "ownerField": "owner",
-                                "allow": "owner",
-                                "identityClaim": "cognito:username",
+                                "allow": "public",
                                 "operations": [
                                     "create",
-                                    "update",
-                                    "delete",
-                                    "read"
+                                    "read",
+                                    "update"
                                 ]
                             }
                         ]
@@ -482,9 +452,11 @@ export const schema = {
                     "properties": {
                         "rules": [
                             {
-                                "allow": "private",
+                                "allow": "public",
                                 "operations": [
-                                    "read"
+                                    "create",
+                                    "read",
+                                    "update"
                                 ]
                             },
                             {
@@ -607,21 +579,11 @@ export const schema = {
                     "properties": {
                         "rules": [
                             {
-                                "allow": "private",
-                                "operations": [
-                                    "read"
-                                ]
-                            },
-                            {
-                                "provider": "userPools",
-                                "ownerField": "owner",
-                                "allow": "owner",
-                                "identityClaim": "cognito:username",
+                                "allow": "public",
                                 "operations": [
                                     "create",
-                                    "update",
-                                    "delete",
-                                    "read"
+                                    "read",
+                                    "update"
                                 ]
                             }
                         ]

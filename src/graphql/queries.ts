@@ -87,7 +87,6 @@ export const getLike = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -143,7 +142,6 @@ export const listLikes = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -208,7 +206,6 @@ export const syncLikes = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -275,7 +272,6 @@ export const likesByUserID = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -344,7 +340,6 @@ export const likesForPostByUser = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -437,7 +432,6 @@ export const getComment = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -494,7 +488,6 @@ export const listComments = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -560,7 +553,6 @@ export const syncComments = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -628,7 +620,6 @@ export const commentsByUserID = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -698,7 +689,6 @@ export const commentsByPost = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
-        owner
       }
       nextToken
       startedAt
@@ -759,7 +749,6 @@ export const getPost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -775,7 +764,6 @@ export const getPost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1082,7 +1070,6 @@ export const getUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1097,7 +1084,6 @@ export const getUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1165,56 +1151,6 @@ export const syncUsers = /* GraphQL */ `
       limit: $limit
       nextToken: $nextToken
       lastSync: $lastSync
-    ) {
-      items {
-        id
-        name
-        email
-        bio
-        username
-        website
-        nofPosts
-        nofFollowers
-        nofFollowings
-        image
-        Posts {
-          nextToken
-          startedAt
-        }
-        Comments {
-          nextToken
-          startedAt
-        }
-        Likes {
-          nextToken
-          startedAt
-        }
-        createdAt
-        updatedAt
-        _version
-        _deleted
-        _lastChangedAt
-        owner
-      }
-      nextToken
-      startedAt
-    }
-  }
-`;
-export const usersByUsername = /* GraphQL */ `
-  query UsersByUsername(
-    $username: String!
-    $sortDirection: ModelSortDirection
-    $filter: ModelUserFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    usersByUsername(
-      username: $username
-      sortDirection: $sortDirection
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
     ) {
       items {
         id

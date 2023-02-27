@@ -88,16 +88,12 @@ export const onCreateCommentByPostId = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
 export const onCreateLike = /* GraphQL */ `
-  subscription OnCreateLike(
-    $filter: ModelSubscriptionLikeFilterInput
-    $owner: String
-  ) {
-    onCreateLike(filter: $filter, owner: $owner) {
+  subscription OnCreateLike($filter: ModelSubscriptionLikeFilterInput) {
+    onCreateLike(filter: $filter) {
       id
       userID
       postID
@@ -180,16 +176,12 @@ export const onCreateLike = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
 export const onUpdateLike = /* GraphQL */ `
-  subscription OnUpdateLike(
-    $filter: ModelSubscriptionLikeFilterInput
-    $owner: String
-  ) {
-    onUpdateLike(filter: $filter, owner: $owner) {
+  subscription OnUpdateLike($filter: ModelSubscriptionLikeFilterInput) {
+    onUpdateLike(filter: $filter) {
       id
       userID
       postID
@@ -272,16 +264,12 @@ export const onUpdateLike = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
 export const onDeleteLike = /* GraphQL */ `
-  subscription OnDeleteLike(
-    $filter: ModelSubscriptionLikeFilterInput
-    $owner: String
-  ) {
-    onDeleteLike(filter: $filter, owner: $owner) {
+  subscription OnDeleteLike($filter: ModelSubscriptionLikeFilterInput) {
+    onDeleteLike(filter: $filter) {
       id
       userID
       postID
@@ -364,16 +352,12 @@ export const onDeleteLike = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
 export const onCreateComment = /* GraphQL */ `
-  subscription OnCreateComment(
-    $filter: ModelSubscriptionCommentFilterInput
-    $owner: String
-  ) {
-    onCreateComment(filter: $filter, owner: $owner) {
+  subscription OnCreateComment($filter: ModelSubscriptionCommentFilterInput) {
+    onCreateComment(filter: $filter) {
       id
       createdAt
       comment
@@ -457,16 +441,12 @@ export const onCreateComment = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
 export const onUpdateComment = /* GraphQL */ `
-  subscription OnUpdateComment(
-    $filter: ModelSubscriptionCommentFilterInput
-    $owner: String
-  ) {
-    onUpdateComment(filter: $filter, owner: $owner) {
+  subscription OnUpdateComment($filter: ModelSubscriptionCommentFilterInput) {
+    onUpdateComment(filter: $filter) {
       id
       createdAt
       comment
@@ -550,16 +530,12 @@ export const onUpdateComment = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
 export const onDeleteComment = /* GraphQL */ `
-  subscription OnDeleteComment(
-    $filter: ModelSubscriptionCommentFilterInput
-    $owner: String
-  ) {
-    onDeleteComment(filter: $filter, owner: $owner) {
+  subscription OnDeleteComment($filter: ModelSubscriptionCommentFilterInput) {
+    onDeleteComment(filter: $filter) {
       id
       createdAt
       comment
@@ -643,7 +619,6 @@ export const onDeleteComment = /* GraphQL */ `
       _version
       _deleted
       _lastChangedAt
-      owner
     }
   }
 `;
@@ -704,7 +679,6 @@ export const onCreatePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -720,7 +694,6 @@ export const onCreatePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -790,7 +763,6 @@ export const onUpdatePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -806,7 +778,6 @@ export const onUpdatePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -876,7 +847,6 @@ export const onDeletePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -892,7 +862,6 @@ export const onDeletePost = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -954,7 +923,6 @@ export const onCreateUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -969,7 +937,6 @@ export const onCreateUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1032,7 +999,6 @@ export const onUpdateUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1047,7 +1013,6 @@ export const onUpdateUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1110,7 +1075,6 @@ export const onDeleteUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
@@ -1125,7 +1089,6 @@ export const onDeleteUser = /* GraphQL */ `
           _version
           _deleted
           _lastChangedAt
-          owner
         }
         nextToken
         startedAt
