@@ -12,8 +12,8 @@ const AppsyncID=process.env.API_ROBINSTAGRAMTSAWS_GRAPHQLAPIIDOUTPUT
 const TableName =`User-${AppsyncID}-${env}`
 
 const userExists= async (id)=>{
-  console.log(`Dentro de funcion userExists y la tabla es: ${TableName}`)
-  console.log(`Dentro de funcion userExists y el id es: ${id}`)
+  //console.log(`Dentro de funcion userExists y la tabla es: ${TableName}`)
+  //console.log(`Dentro de funcion userExists y el id es: ${id}`)
   const params = {
     TableName,
     Key: id,
@@ -21,27 +21,21 @@ const userExists= async (id)=>{
   try {
     // get devuelve un 'callback' y lo convertimos a 'promise' pasa usar 'await'
     const response =await docClient.get(params).promise()
-    console.log(`Dentro de funcion userExists,tras llamar a -docClient.get(params).promise()- y la respuest es: ${response}`)
-    return !!response?.Item //sólo si es un valor 'truthy'
+    return !!response?.Item //sólo si es un valor 'truthy'-> !! lo convierte en booleano
   } catch (e) {
-    console.log(`Error Dentro de funcion userExists,tras llamar a -docClient.get(params).promise()- y 'e' es: ${e}`)
-    return false;}
-
-  
-
-
+    return false;
+  }
 }
+
 const saveUser=async (user)=>{
-  console.log(`Dentro de funcion saveUser y la tabla es: ${TableName}`)
-  console.log(`Dentro de funcion saveUser y el user.id es: ${user?.id} el user.name es: ${user?.name} el user.email es: ${user?.name}`)
+ // console.log(`Dentro de funcion saveUser y la tabla es: ${TableName}`)
+ // console.log(`Dentro de funcion saveUser y el user.id es: ${user?.id} el user.name es: ${user?.name} el user.email es: ${user?.name}`)
 
   const date =new Date();
   const dateStr=date.toISOString();
   const timestamp=date.getTime();
-  console.log(`Dentro de funcion saveUser y dateStr es: ${dateStr}`)
-  console.log(`Dentro de funcion saveUser y timestamp es: ${timestamp}`)
-
-
+  //console.log(`Dentro de funcion saveUser y dateStr es: ${dateStr}`)
+  //console.log(`Dentro de funcion saveUser y timestamp es: ${timestamp}`)
   // vamos a DynamoDB y vemos que campos tiene la tabla
   const Item ={
     ...user, 
@@ -61,12 +55,11 @@ const saveUser=async (user)=>{
   try {
       // get devuelve un 'callback' y lo convertimos a 'promise' pasa usar 'await'
       const response =await docClient.put(params).promise()
-      console.log(`Dentro de funcion saveUser,tras llamar a -docClient.put(params).promise()- y la respuest es: ${response}`)
+      //console.log(`Dentro de funcion saveUser,tras llamar a -docClient.put(params).promise()- y la respuest es: ${response}`)
 
 
   } catch (e) {console.log(e)
     console.log(`Error Dentro de funcion saveUser,tras llamar a -docClient.put(params).promise()- y 'e' es: ${e}`)
-
   }
  
 }
@@ -82,15 +75,15 @@ exports.handler = async (event, context) => {
   }
   // the lambda signUp function is called twice or more: let's register only first time
  
-  console.log(event.request)
-  console.log(event.request.userAttributes)
+ // console.log(event.request)
+ // console.log(event.request.userAttributes)
 
   const {sub,email,name} = event.request.userAttributes //{sub,email,name}
-  console.log(event.request.userAttributes.sub)
+ // console.log(event.request.userAttributes.sub)
 
   const newUser={
     id:sub,
-    owner: userAttributes.sub,   
+    //owner: userAttributes.sub,   
     name,
     email,
     nofPosts:0,
@@ -104,8 +97,5 @@ exports.handler = async (event, context) => {
     console.log(`User ${newUser.id} has been saved to the database`)} 
   else{
     console.log(`User ${newUser.id} already exists`)}
-
-
-
   return event
 };

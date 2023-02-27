@@ -142,7 +142,7 @@ const EditProfileScreen = () => {
       <CustomInput label="Username" name="username" control={control} 
       rules={{required:"The Username is required", minLength:{value:3,message:"Must be more than 3 characters"},validate:validateUsername}}/>
       <CustomInput label="Website" name="website" control={control} rules={{required:"The Website is required",
-    pattern:{value: URL_REGEX,message:"The email is invalid"}}}/>
+    pattern:{value: URL_REGEX,message:"The Website is invalid"}}}/>
       <CustomInput label="Bio" name="bio" control={control} multiline 
       rules={{maxLength:{value:200,message:"Bio must be more less than 200 characters"}}}/>
       <Text onPress={handleSubmit(onSubmit)} style={styles.textButton}>{updateLoading ? "Submitting...": "Submit"}</Text>
