@@ -23,6 +23,7 @@ export const postsByDate = gql`
         createdAt
         type
         description
+        location
         image
         images
         nofLikes

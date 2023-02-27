@@ -101,6 +101,7 @@ type EagerPost = {
   readonly createdAt: string;
   readonly type: string;
   readonly description?: string | null;
+  readonly location?: string | null;
   readonly image?: string | null;
   readonly images?: string[] | null;
   readonly nofLikes: number;
@@ -122,6 +123,7 @@ type LazyPost = {
   readonly createdAt: string;
   readonly type: string;
   readonly description?: string | null;
+  readonly location?: string | null;
   readonly image?: string | null;
   readonly images?: string[] | null;
   readonly nofLikes: number;

@@ -16,6 +16,7 @@ import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view'
 
 const CreatePostScreen = () => {
     const [description, setDescription] = useState("")
+    const [location, setLocation] = useState("")
     const {userId}=useAuthContext()
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [progress, setProgress] = useState(0)
@@ -40,6 +41,7 @@ const CreatePostScreen = () => {
         const input: CreatePostInput={
             type:'POST',
             description,
+            location,
             image:undefined,
             images:undefined,
             video:undefined,
@@ -91,6 +93,7 @@ const CreatePostScreen = () => {
     <KeyboardAwareScrollView contentContainerStyle={styles.root}>
       <View style={styles.content}>{content}</View>
       <TextInput value={description} onChangeText={setDescription} placeholder='Description....' style={styles.input} multiline numberOfLines={5}/>
+      <TextInput value={location} onChangeText={setLocation} placeholder='Location....' style={styles.input}/>
         <Button text={isSubmitting?"Submitting...":"Submit"} onPress={submit}/>
     {isSubmitting &&(
         <View style={styles.progressContainer}>
