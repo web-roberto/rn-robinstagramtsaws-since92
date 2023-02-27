@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main # the workflow will be executed when we do a push to the branch main (development)
-
+      - dev 
 jobs:
   deploy-backend:
     name: Deploy backend to production environment
