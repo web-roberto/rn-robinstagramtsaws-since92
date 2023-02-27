@@ -83,7 +83,7 @@ exports.handler = async (event, context) => {
 
   const newUser={
     id:sub,
-    //owner: userAttributes.sub,   
+    owner: userAttributes.sub,   
     name,
     email,
     nofPosts:0,
