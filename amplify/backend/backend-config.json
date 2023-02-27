@@ -94,6 +94,24 @@
       "service": "Lambda"
     }
   },
+  "parameters": {
+    "AMPLIFY_function_robinstagramtsawsPostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "robinstagramtsawsPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_robinstagramtsawsPostConfirmation_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "robinstagramtsawsPostConfirmation"
+        }
+      ]
+    }
+  },
   "storage": {
     "storage": {
       "dependsOn": [],
