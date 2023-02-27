@@ -79,11 +79,11 @@ exports.handler = async (event, context) => {
  // console.log(event.request.userAttributes)
 
   const {sub,email,name} = event.request.userAttributes //{sub,email,name}
- // console.log(event.request.userAttributes.sub)
+ // console.log(event.request.userAttributes.sub) 
 
   const newUser={
     id:sub,
-    //owner: userAttributes.sub,   
+    owner: userAttributes.sub,   
     name,
     email,
     nofPosts:0,
