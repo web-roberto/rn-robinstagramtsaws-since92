@@ -15,6 +15,14 @@
           "additionalAuthenticationProviders": [
             {
               "authenticationType": "AWS_IAM"
+            },
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-02-27T15:53:48.269Z",
+                "apiKeyExpirationDays": 365,
+                "description": "nuevaApiKey"
+              },
+              "authenticationType": "API_KEY"
             }
           ],
           "defaultAuthentication": {
@@ -84,24 +92,6 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_function_robinstagramtsawsPostConfirmation_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "robinstagramtsawsPostConfirmation"
-        }
-      ]
-    },
-    "AMPLIFY_function_robinstagramtsawsPostConfirmation_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "robinstagramtsawsPostConfirmation"
-        }
-      ]
     }
   },
   "storage": {
