@@ -39,6 +39,7 @@ const EditProfileScreen = () => {
         setValue('username',user.username);
         setValue('bio',user.bio);
         setValue('website',user.website);
+        setValue('website',user.website);
         console.log('---- EditProfileScreen--useEffect-- user is: ',JSON.stringify(user, null, 2));
       //  console.log('dentro del useEffect, -user- vale:',user)
       }
