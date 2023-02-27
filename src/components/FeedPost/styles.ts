@@ -43,5 +43,8 @@ export default StyleSheet.create({
   icon:{
     marginHorizontal:5,
   },
+  location :{
+    color:colors.grey
+  }
 
 })

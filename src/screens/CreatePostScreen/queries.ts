@@ -8,6 +8,7 @@ export const createPost = gql`
     createPost(input: $input, condition: $condition) {
       id
       description
+      location
       image
       images
       nofLikes

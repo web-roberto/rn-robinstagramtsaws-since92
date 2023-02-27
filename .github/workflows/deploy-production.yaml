@@ -1,0 +1,77 @@
+name: Build and Deploy the application to production environment
+on:
+  workflow_dispatch:  # the workflow will be executed manually
+  push:
+    branches:
+      - main # the workflow will be executed when we do a push to the branch main (development)
+
+jobs:
+  deploy-backend:
+    name: Deploy backend to production environment
+    uses: ./.github/workflows/amplify-init.yaml
+    secrets: inherit
+    with:
+      AMPLIFY_ENV_NAME: prod
+  patch-version:
+    name: Patch the version of the app
+    needs: deploy-backend
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3 # graba lo cambios de nuestro repositorio a la maquina virtual del job => git pull origin main
+      - run: git pull origin ${{ github.ref_name }} # usamos el último commit subido y no el que dispara este workflow
+      - uses: actions/setup-node@v3 #instala node 16.x con npm, dentro de la maquina virtual => brew install node
+        with:
+          node-version: 16.x
+          cache: npm
+      - name: Install dependencies # => npm i --legacy-peer-deps 
+       # run: npm ci # npm install
+       ## uso yarn en lugar de npm
+        run: npm ci --legacy-peer-deps   
+
+      # autor de: git push origin main que lanza todo el workflow
+      - run: | 
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com" 
+          git config user.name "$GITHUB_ACTOR"
+
+      - name: Patch version
+        run: npm version patch
+
+         # Commit and push changes to github => git push origin main (production)
+      - uses: stefanzweifel/git-auto-commit-action@v4
+
+  build-android:
+    name: Install and build android app (Production)
+    needs: patch-version
+    uses: ./.github/workflows/eas-build.yaml
+    secrets: inherit
+    with:
+      PLATFORM: android
+      PROFILE: production
+      
+  build-ios:
+    name: Install and build ios app (Production)
+    needs: patch-version
+    uses: ./.github/workflows/eas-build.yaml
+    secrets: inherit
+    with:
+      PLATFORM: ios
+      PROFILE: production # por exclusion tambien es production
+
+  submit-android:
+    name: Submit android app to Play Store
+    needs: build-android
+    uses: ./.github/workflows/eas-submit.yaml
+    secrets: inherit
+    with:
+      PLATFORM: android
+      # PROFILE: production
+
+  submit-ios:
+    name: Submit ios app to App Store
+    needs: build-ios
+    uses: ./.github/workflows/eas-submit.yaml
+    secrets: inherit
+    with:
+      PLATFORM: ios
+      # PROFILE: production      
+

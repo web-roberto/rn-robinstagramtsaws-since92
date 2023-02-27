@@ -46,6 +46,7 @@ export const createLike = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -137,6 +138,7 @@ export const updateLike = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -228,6 +230,7 @@ export const deleteLike = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -321,6 +324,7 @@ export const createComment = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -413,6 +417,7 @@ export const updateComment = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -505,6 +510,7 @@ export const deleteComment = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -561,6 +567,7 @@ export const createPost = /* GraphQL */ `
       createdAt
       type
       description
+      location
       image
       images
       nofLikes
@@ -646,6 +653,7 @@ export const updatePost = /* GraphQL */ `
       createdAt
       type
       description
+      location
       image
       images
       nofLikes
@@ -731,6 +739,7 @@ export const deletePost = /* GraphQL */ `
       createdAt
       type
       description
+      location
       image
       images
       nofLikes
@@ -828,6 +837,7 @@ export const createUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -905,6 +915,7 @@ export const updateUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -982,6 +993,7 @@ export const deleteUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes

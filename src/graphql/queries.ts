@@ -43,6 +43,7 @@ export const getLike = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -124,6 +125,7 @@ export const listLikes = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -188,6 +190,7 @@ export const syncLikes = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -254,6 +257,7 @@ export const likesByUserID = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -322,6 +326,7 @@ export const likesForPostByUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -389,6 +394,7 @@ export const getComment = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -471,6 +477,7 @@ export const listComments = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -536,6 +543,7 @@ export const syncComments = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -603,6 +611,7 @@ export const commentsByUserID = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -672,6 +681,7 @@ export const commentsByPost = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -702,6 +712,7 @@ export const getPost = /* GraphQL */ `
       createdAt
       type
       description
+      location
       image
       images
       nofLikes
@@ -789,6 +800,7 @@ export const listPosts = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -850,6 +862,7 @@ export const syncPosts = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -915,6 +928,7 @@ export const postsByDate = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -978,6 +992,7 @@ export const postsByUserID = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -1040,6 +1055,7 @@ export const getUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes

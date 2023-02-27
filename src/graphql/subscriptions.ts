@@ -45,6 +45,7 @@ export const onCreateCommentByPostId = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -135,6 +136,7 @@ export const onCreateLike = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -226,6 +228,7 @@ export const onUpdateLike = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -317,6 +320,7 @@ export const onDeleteLike = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -410,6 +414,7 @@ export const onCreateComment = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -502,6 +507,7 @@ export const onUpdateComment = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -594,6 +600,7 @@ export const onDeleteComment = /* GraphQL */ `
         createdAt
         type
         description
+        location
         image
         images
         nofLikes
@@ -650,6 +657,7 @@ export const onCreatePost = /* GraphQL */ `
       createdAt
       type
       description
+      location
       image
       images
       nofLikes
@@ -735,6 +743,7 @@ export const onUpdatePost = /* GraphQL */ `
       createdAt
       type
       description
+      location
       image
       images
       nofLikes
@@ -820,6 +829,7 @@ export const onDeletePost = /* GraphQL */ `
       createdAt
       type
       description
+      location
       image
       images
       nofLikes
@@ -917,6 +927,7 @@ export const onCreateUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -994,6 +1005,7 @@ export const onUpdateUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes
@@ -1071,6 +1083,7 @@ export const onDeleteUser = /* GraphQL */ `
           createdAt
           type
           description
+          location
           image
           images
           nofLikes

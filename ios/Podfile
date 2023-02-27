@@ -39,23 +39,11 @@ target 'AlonsoInsta' do
     inherit! :complete
     # Pods for testing
   end
-
-  # post_install do |installer|
-  #   react_native_post_install(
-  #     installer,
-  #     # Set `mac_catalyst_enabled` to `true` in order to apply patches
-  #     # necessary for Mac Catalyst builds
-  #     :mac_catalyst_enabled => false
-  #   )
-  #   __apply_Xcode_12_5_M1_post_install_workaround(installer)
-  # end
-
   post_install do |installer|
     react_native_post_install(installer,
-          # Set `mac_catalyst_enabled` to `true` in order to apply patches
-      # necessary for Mac Catalyst builds
-      :mac_catalyst_enabled => false
-    )
+      # Set `mac_catalyst_enabled` to `true` in order to apply patches
+    # necessary for Mac Catalyst builds
+    :mac_catalyst_enabled => false)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
 
     # This is necessary for Xcode 14, because it signs resource bundles by default
@@ -69,7 +57,13 @@ target 'AlonsoInsta' do
       end
     end
   end
-
-
-
+  # post_install do |installer|
+  #   react_native_post_install(
+  #     installer,
+  #     # Set `mac_catalyst_enabled` to `true` in order to apply patches
+  #     # necessary for Mac Catalyst builds
+  #     :mac_catalyst_enabled => false
+  #   )
+  #   __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  # end
 end
