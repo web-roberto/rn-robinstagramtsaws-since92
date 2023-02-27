@@ -86,6 +86,7 @@ amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
 **.sample
+ROBERTO.md
 #amplify-do-not-edit-end
 !aws-exports.js
 service_account.json
