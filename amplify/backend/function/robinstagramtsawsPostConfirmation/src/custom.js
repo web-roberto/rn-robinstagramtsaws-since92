@@ -76,15 +76,18 @@ exports.handler = async (event, context) => {
   console.log("roberto.....Funciona la funcion lambda")
   console.log(event)
 
-
   if(!event?.request?.userAttributes){
     console.log('No user data available')
     return;
   }
   // the lambda signUp function is called twice or more: let's register only first time
  
-  
+  console.log(event.request)
+  console.log(event.request.userAttributes)
+
   const {sub,email,name} = event.request.userAttributes //{sub,email,name}
+  console.log(event.request.userAttributes.sub)
+
   const newUser={
     id:sub,
     owner: userAttributes.sub,   
